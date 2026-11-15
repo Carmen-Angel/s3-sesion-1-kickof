@@ -1,7 +1,7 @@
 //Arrays
 const duraciones = [95, 120, 45, 180, 62, 150, 88, 210, 73, 140]
 
-/*console.log("Duraciones de películas en minutos", duraciones)
+console.log("Duraciones de películas en minutos", duraciones)
 
 console.log("Elementos que tiene el array" , duraciones.length)
 
@@ -20,10 +20,10 @@ if (duracionPeliculas < 90){
     console.log("Película estándar")
 }else{
     console.log("Película larga")
-}*/
+}
 
 //bucles y condicionales
-/*let cortas = 0
+let cortas = 0
 let normales = 0
 let larga = 0
 
@@ -40,10 +40,10 @@ for(let i = 0; i < duraciones.length; i++) {
     }
 }
 
-console.log(`Cortas: ${cortas} - Normales: ${normales} - Largas: ${larga}`)*/
+console.log(`Cortas: ${cortas} - Normales: ${normales} - Largas: ${larga}`)
 
 //OBJETOS
-/*const pelicula = {
+const pelicula = {
     titulo:"Origen",
     fecha: 2010,
     rating: 8.8,
@@ -61,7 +61,7 @@ console.log(pelicula)
 
 //añadir propiedades nuevas
 pelicula.director = "Christopher Nolan"
-console.log(pelicula)*/
+console.log(pelicula)
 
 //un array de objetos
 const peliculas = [
@@ -109,16 +109,16 @@ const peliculas = [
     },
 ]
 
-/*for(let i = 0; i <peliculas.length; i++){
+for(let i = 0; i <peliculas.length; i++){
     const pelicula= peliculas[i]
     if (pelicula.disponible){
         console.log(`[${pelicula.fecha}] ${pelicula.titulo} - Género: ${pelicula.genero} - Rating: ${pelicula.rating}`, )
     } else{
         console.log(`[${pelicula.fecha}] ${pelicula.titulo} - NO DISPONIBLE`)
     }
-}*/
+}
 
-/*for(let i = 0; i <peliculas.length; i++){
+for(let i = 0; i <peliculas.length; i++){
     const pelicula= peliculas[i]
     if (pelicula.disponible && pelicula.rating >= 8.0){
         console.log(`Recomendada: ${pelicula.titulo} (${pelicula.rating})`)
@@ -131,10 +131,10 @@ const peliculas = [
     if(!pelicula.disponible){
         console.log(`Peliculas no disponible. Proximamente: ${pelicula.titulo}`)
     }
-}*/
+}
 
 //FUNCIONES
-/*function sumarPrecios(precio1, precio2){
+function sumarPrecios(precio1, precio2){
     const resultado =  precio1 + precio2
     return resultado
 }
@@ -146,7 +146,7 @@ function restarPrecios(precio1, precio2){
     return resultado
 }
 
-console.log(restarPrecios(50, 25))*/
+console.log(restarPrecios(50, 25))
 
 function formatearTitulo(titulo){
     const tituloMayus = titulo.toUpperCase()
@@ -154,7 +154,7 @@ function formatearTitulo(titulo){
     return tituloFormateado
 }
 
-/*console.log(formatearTitulo("Carmen"))*/
+console.log(formatearTitulo("Carmen"))
 
 for(let i = 0; i <peliculas.length; i++){
     console.log(formatearTitulo(peliculas[i].titulo))
